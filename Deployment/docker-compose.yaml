@@ -10,7 +10,7 @@ services:
     volumes:
       - todo_volume:/var/lib/postgresql/data
     ports:
-      - "5434:5432"
+      - "5435:5432"
 
   todo-api-gateway:
     image: akhi9550/todo-api
