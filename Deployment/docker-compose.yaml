@@ -10,28 +10,28 @@ services:
     volumes:
       - todo_volume:/var/lib/postgresql/data
     ports:
-      - "5435:5432"
+      - "5431:5432"
 
   todo-api-gateway:
-    image: akhi9550/todo-api
+    image: akhi9550/todo-api-gateway
     restart: always
     depends_on:
       - postgres
-    container_name: todo-api
+    container_name: todo-api-gateway
     networks:
       - todo_network
     ports:
       - "5000:5000"
 
   todo-services:
-    image: akhi9550/todo-service
+    image: akhi9550/todo-operation-sevice
     restart: always
     depends_on:
       - postgres
-    container_name: todo-service
+    container_name: todo-operation-sevice
     networks:
       - todo_network
-    hostname: todo-service
+    hostname: todo-operation-sevice
 
 networks:
   todo_network:
