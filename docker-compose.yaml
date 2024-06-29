@@ -14,23 +14,23 @@ services:
       - "5431:5432"
 
   todo-api-gateway:
-    image: todo-api
+    image: todo_api_gateway
     restart: always
-    container_name: todo-api
+    container_name: todo-api-gateway
     networks:
       - todo_network
     ports:
       - "5001:5000"
 
   todo-services:
-    image: todo-service
+    image: todo_operation_sevice
     restart: always
     depends_on:
       - postgres
-    container_name: todo-service
+    container_name: todo-operation-sevice
     networks:
       - todo_network
-    hostname: todo-service
+    hostname: todo-operation-sevice
 
 networks:
   todo_network:
