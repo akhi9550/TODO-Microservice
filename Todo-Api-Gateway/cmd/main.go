@@ -19,9 +19,9 @@ func main() {
 	docs.SwaggerInfo.Title = "TODOAPP_Microservice_CleanArchitecture"
 	docs.SwaggerInfo.Description = "ToDo is a list of activities that is to be done by a particular individual"
 	docs.SwaggerInfo.Version = "1.0.0"
-	docs.SwaggerInfo.Host = "todoapp.zhooze.shop"
+	docs.SwaggerInfo.Host = "localhost:5000"
 	docs.SwaggerInfo.BasePath = ""
-	docs.SwaggerInfo.Schemes = []string{"https"}
+	docs.SwaggerInfo.Schemes = []string{"http"}
 	c, err := config.LoadConfig()
 	if err != nil {
 		log.Fatalln("Failed at config", err)
