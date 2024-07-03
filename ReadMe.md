@@ -11,3 +11,12 @@ The To-Do App Backend REST API is designed to manage tasks and to-do items, prov
 - **Retrieve tasks, supporting pagination and filtering.**
 - **Update task details.**
 - **Delete tasks.**
+
+## Technologies and Libraries
+- **Golang**: The primary language used for building the API, chosen for its performance and efficiency.
+- **Gin**: A web framework for building RESTful APIs in Golang, providing routing, middleware support, and more.
+- **Database**: Postgresql for storing user and task data
+- **GORM**: An ORM library for Golang, used for interacting with the database.
+- **JWT**: For secure user authentication.
+- **Swagger**: For API documentation, making it easier for developers to understand and use the API.
+- **Containerization**: Docker for containerizing microservices
