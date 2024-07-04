@@ -20,3 +20,15 @@ The To-Do App Backend REST API is designed to manage tasks and to-do items, prov
 - **JWT**: For secure user authentication.
 - **Swagger**: For API documentation, making it easier for developers to understand and use the API.
 - **Containerization**: Docker for containerizing microservices
+
+
+## Getting Started
+
+To run the project locally, you can follow these steps:
+
+1. Clone the repository.
+2. Set up your environment with the required dependencies, including Golang, PostgreSQL and Docker.
+3. Configure your environment variables (e.g., database credentials).
+4. Build and run the project.
+
+
