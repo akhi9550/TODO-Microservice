@@ -36,8 +36,6 @@ To run the project locally, you can follow these steps:
 
 Before running the project, you need to set the following environment variables with your corresponding values:
 
-## PostgreSQL
-
 - `PORT`   : Base Url
 - `DB_URL` : postgres://username:password@localhost:5432/databasename
 
